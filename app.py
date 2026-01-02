@@ -91,28 +91,40 @@ st.markdown("""
         min-height: 36px;
     }
     
-    /* 判別結果 */
-    .setting-result {
+    /* 判別結果 - ダークモード対策 */
+    .setting-result,
+    .setting-result * {
         padding: 0.5rem 0.8rem;
         border-radius: 8px;
         margin: 0.3rem 0;
         font-size: 0.9rem;
         color: #333 !important;
+        -webkit-text-fill-color: #333 !important;
     }
-    .setting-positive {
-        background-color: #C8E6C9;
+    .setting-result * {
+        padding: 0;
+        margin: 0;
+    }
+    .setting-positive,
+    .setting-positive * {
+        background-color: #C8E6C9 !important;
         border-left: 4px solid #4CAF50;
         color: #1B5E20 !important;
+        -webkit-text-fill-color: #1B5E20 !important;
     }
-    .setting-neutral {
-        background-color: #FFF9C4;
+    .setting-neutral,
+    .setting-neutral * {
+        background-color: #FFF9C4 !important;
         border-left: 4px solid #FFC107;
         color: #6D4C00 !important;
+        -webkit-text-fill-color: #6D4C00 !important;
     }
-    .setting-negative {
-        background-color: #FFCDD2;
+    .setting-negative,
+    .setting-negative * {
+        background-color: #FFCDD2 !important;
         border-left: 4px solid #F44336;
         color: #B71C1C !important;
+        -webkit-text-fill-color: #B71C1C !important;
     }
     
     /* 確率入力行を強制横並び */
