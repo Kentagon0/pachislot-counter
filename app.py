@@ -97,18 +97,22 @@ st.markdown("""
         border-radius: 8px;
         margin: 0.3rem 0;
         font-size: 0.9rem;
+        color: #333 !important;
     }
     .setting-positive {
         background-color: #C8E6C9;
         border-left: 4px solid #4CAF50;
+        color: #1B5E20 !important;
     }
     .setting-neutral {
         background-color: #FFF9C4;
         border-left: 4px solid #FFC107;
+        color: #6D4C00 !important;
     }
     .setting-negative {
         background-color: #FFCDD2;
         border-left: 4px solid #F44336;
+        color: #B71C1C !important;
     }
     
     /* 確率入力行を強制横並び */
